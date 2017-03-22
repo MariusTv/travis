@@ -3,6 +3,8 @@ language: php
 php:
   - 7.0
 
+travis encrypt "solosystems:fkX1hFVmmctRBu8f0CsBWeFh" --add notifications.slack
+
 before_script:
   - mysql -e 'create database travis_test;'
   - cp .env.travis .env
