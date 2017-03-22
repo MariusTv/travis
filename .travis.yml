@@ -3,8 +3,6 @@ language: php
 php:
   - 7.0
 
-notifications:
-  slack: solosystems:fkX1hFVmmctRBu8f0CsBWeFh
 
 before_script:
   - mysql -e 'create database travis_test;'
