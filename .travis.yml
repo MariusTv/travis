@@ -5,9 +5,9 @@ php:
 
 before_script:
   - composer self-update
+  - cp .env.travis .env
   - composer install
   - mysql -e 'create database travis_test;'
-  - cp .env.travis .env
   - php artisan key:generate
   - php artisan migrate
 
